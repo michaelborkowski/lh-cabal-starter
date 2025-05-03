@@ -1,0 +1,18 @@
+.vscode
+
+# Haskell
+# ~~~~~~~~~~~~~~~~~~~~
+
+dist
+dist-*
+cabal-dev
+*.o
+*.hi
+cabal.project.local
+cabal.project.local~
+.*.swp
+.*.swo
+
+# Liquid Haskell
+# ~~~~~~~~~~~~~~~~~~~~
+**/.liquid

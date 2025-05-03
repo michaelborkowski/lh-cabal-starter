@@ -1,0 +1,28 @@
+cabal-version:  >= 1.10
+
+name:           lh-cabal-starter
+version:        0.0.0.1
+build-type:     Simple
+description:    LH template repo using Cabal
+author:         Michael H. Borkowski
+maintainer:     mhborkow@purdue.eud
+copyright:      2025 Michael H. Borkowski
+license:        MIT
+license-file:   LICENSE
+  
+library
+  exposed-modules:
+      Peano
+  hs-source-dirs:
+      src
+  ghc-options:  -fplugin=LiquidHaskell 
+                -fplugin-opt=LiquidHaskell:--ple
+      --          -fplugin-opt=LiquidHaskell:--ple-with-undecided-guards
+                -fplugin-opt=LiquidHaskell:--reflection
+                -fplugin-opt=LiquidHaskell:--short-names
+  build-depends:
+      base   
+    , liquidhaskell         
+    , liquid-prelude        
+  default-language: GHC2021
+  
